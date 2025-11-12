@@ -23,7 +23,9 @@ The Android app id is `com.recep.basicfruitninja` with minSdk 21 and target/comp
 
 ## Screenshot
 
+![Game Start Screenshot](screenshots/start_screen.jpg)
 ![Gameplay Screenshot](screenshots/game_screen.jpg)
+![Game Over Screenshot](screenshots/game_over_screen.jpg)
 
 ## Tech stack
 
