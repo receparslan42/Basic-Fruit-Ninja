@@ -1,6 +1,7 @@
 # Basic Fruit Ninja (Java + libGDX)
 
-A lightweight Fruit Ninja–style slicing game built with libGDX. This repo is organized as a typical libGDX multi-module project:
+A lightweight Fruit Ninja–style slicing game built with libGDX. This repo is organized as a typical
+libGDX multi-module project:
 
 - `core`: cross-platform game logic, assets usage, and rendering
 - `android`: Android launcher and packaging
@@ -21,11 +22,11 @@ The Android app id is `com.recep.basicfruitninja` with minSdk 21 and target/comp
 - Chain combos by slicing multiple fruits in a single swipe to earn bonus points.
 - Try not to miss fruits; depending on the level rules, hazards (like bombs) may penalize you.
 
-## Screenshot
+## Screenshots
 
-![Game Start Screenshot](screenshots/start_screen.jpg)
-![Gameplay Screenshot](screenshots/game_screen.jpg)
-![Game Over Screenshot](screenshots/game_over_screen.jpg)
+| start                                                                   | Gameplay                                                                  | Game Over                                                                       |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| <img src="screenshots/start_screen.jpg" width="300" alt="Start Screen"> | <img src="screenshots/game_screen.jpg" width="300" alt="Gameplay Screen"> | <img src="screenshots/game_over_screen.jpg" width="300" alt="Game Over Screen"> |
 
 ## Tech stack
 
@@ -83,34 +84,41 @@ From the repo root:
 ```
 
 Notes:
+
 - The `:android:run` task uses ADB to start `com.recep.basicfruitninja/.android.AndroidLauncher`.
-- If you see SDK path issues, ensure `local.properties` contains `sdk.dir=...` or that `ANDROID_SDK_ROOT` is set.
+- If you see SDK path issues, ensure `local.properties` contains `sdk.dir=...` or that
+  `ANDROID_SDK_ROOT` is set.
 
 ## Assets
 
 - Place game assets in the top-level `assets/` folder.
-- A small Gradle task generates `assets/assets.txt` listing all assets at build time (used by some libGDX workflows).
+- A small Gradle task generates `assets/assets.txt` listing all assets at build time (used by some
+  libGDX workflows).
 
 ## Build details
 
 - Android module
-  - namespace/appId: `com.recep.basicfruitninja`
-  - compileSdk: 36, targetSdk: 36, minSdk: 21
-  - Java compatibility: 17 (with desugaring)
-  - ProGuard/R8 minification enabled for release builds
+    - namespace/appId: `com.recep.basicfruitninja`
+    - compileSdk: 36, targetSdk: 36, minSdk: 21
+    - Java compatibility: 17 (with desugaring)
+    - ProGuard/R8 minification enabled for release builds
 - Packaging
-  - Native libraries for ARMv7, ARM64, x86, x86_64 are extracted into `android/libs/` automatically via the `copyAndroidNatives` task.
+    - Native libraries for ARMv7, ARM64, x86, x86_64 are extracted into `android/libs/`
+      automatically via the `copyAndroidNatives` task.
 
 ## Troubleshooting
 
 - Gradle sync errors: Update Android Studio/Gradle, check network access to Maven repositories.
 - SDK not found: Set `sdk.dir` in `local.properties` or define `ANDROID_SDK_ROOT`.
-- ADB/device not found: Verify `adb devices` lists your device; enable USB debugging; for emulator, ensure it’s running.
-- Java version mismatch: Android module compiles with Java 23; if your global JDK differs, configure the JDK per module in Android Studio.
+- ADB/device not found: Verify `adb devices` lists your device; enable USB debugging; for emulator,
+  ensure it’s running.
+- Java version mismatch: Android module compiles with Java 23; if your global JDK differs, configure
+  the JDK per module in Android Studio.
 
 ## Contributing
 
-- Issues and PRs are welcome. For larger changes, please open an issue first to discuss the approach.
+- Issues and PRs are welcome. For larger changes, please open an issue first to discuss the
+  approach.
 
 ## License
 
