@@ -9,7 +9,7 @@ apply plugin: 'com.android.application'
 
 android {
   namespace "com.recep.basicfruitninja"
-  compileSdk 35
+  compileSdkVersion 36
   sourceSets {
     main {
       manifest.srcFile 'src/main/AndroidManifest.xml'
@@ -31,8 +31,8 @@ android {
   }
   defaultConfig {
     applicationId 'com.recep.basicfruitninja'
-    minSdkVersion 19
-    targetSdkVersion 35
+    minSdkVersion 21
+    targetSdkVersion 36
     versionCode 1
     versionName "1.0"
     multiDexEnabled true
@@ -45,7 +45,7 @@ android {
   buildTypes {
     release {
       minifyEnabled true
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }
 }

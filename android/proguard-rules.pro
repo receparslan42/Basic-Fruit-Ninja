@@ -37,7 +37,11 @@
 
 # You will need the next three lines if you use scene2d for UI or gameplay.
 # If you don't use scene2d at all, you can remove or comment out the next line:
--keep public class com.badlogic.gdx.scenes.scene2d.** { *; }
+-keep public class com.badlogic.gdx.scenes.scene2d.ui.** { *; }
+# You will need the next line if you use a Stage or Actors directly:
+-keep public class com.badlogic.gdx.scenes.scene2d.Stage { *; }
+-keep public class com.badlogic.gdx.scenes.scene2d.Actor { *; }
+-keep public class com.badlogic.gdx.scenes.scene2d.Group { *; }
 # You will need the next two lines if you use BitmapFont or any scene2d.ui text:
 -keep public class com.badlogic.gdx.graphics.g2d.BitmapFont { *; }
 # You will probably need this line in most cases:
