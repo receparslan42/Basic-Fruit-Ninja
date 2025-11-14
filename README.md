@@ -24,9 +24,13 @@ The Android app id is `com.recep.basicfruitninja` with minSdk 21 and target/comp
 
 ## Screenshots
 
-| start                                                                   | Gameplay                                                                  | Game Over                                                                       |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <img src="screenshots/start_screen.jpg" width="300" alt="Start Screen"> | <img src="screenshots/game_screen.jpg" width="300" alt="Gameplay Screen"> | <img src="screenshots/game_over_screen.jpg" width="300" alt="Game Over Screen"> |
+| Start                                                                                                  | Game Over                                                                                              |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+|                      <img src="screenshots/start_screen.jpg" alt="Start Screen">                       |                 <img src="screenshots/game_over_screen.jpg" alt="Game Over Screen">                    |
+
+| Gameplay                                                                                                                                                                                                        |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                          <img src="screenshots/game_screen.jpg" alt="Gameplay Screen">                                                                          |
 
 ## Tech stack
 
