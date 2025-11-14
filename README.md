@@ -1,4 +1,4 @@
-# Basic Fruit Ninja (Java + libGDX)
+# Basic Fruit Ninja (Java • libGDX)
 
 A lightweight Fruit Ninja–style slicing game built with libGDX. This repo is organized as a typical
 libGDX multi-module project:
